@@ -1,0 +1,24 @@
+{
+  "heading": "Get In Touch",
+  "subheading": "Interested in working together? Let's connect and discuss your project",
+  "infoHeading": "Contact Information",
+  "followHeading": "Let's Connect",
+  "emailPrimary": "hamidelmamouncom@gmail.com",
+  "socialLinks": [
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com/in/hamid-abdalrahman"
+    },
+    {
+      "label": "GitHub",
+      "href": "https://github.com/true-hamid"
+    }
+  ],
+  "personal": {
+    "name": "Hamid Abdalrahman",
+    "title": "Mobile Lead Engineer",
+    "location": "Dubai, UAE"
+  },
+  "email": "Email",
+  "logOut": "Log Out"
+}

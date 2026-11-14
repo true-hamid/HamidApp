@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "badge": "Lead Mobile Engineer",
+    "heading": "Hamid Abdalrahman",
+    "subheading": "Building Enterprise Banking Solutions",
+    "description": "Lead Engineer with {{years}} years of experience designing and delivering enterprise-scale global digital banking solutions. Specialized in mobile engineering, secure digital channels, and multi-region product delivery.",
+    "ctaPrimary": "Who I Am"
+  },
+  "showcase": {
+    "reach": {
+      "figure": "1M+",
+      "caption": "Customers across three regions"
+    },
+    "stats": [
+      {
+        "value": "90%",
+        "label": "Reduction in app vulnerabilities"
+      },
+      {
+        "value": "3×",
+        "label": "Faster app launch time"
+      },
+      {
+        "value": "4.8★",
+        "label": "Average app store rating"
+      }
+    ]
+  }
+}

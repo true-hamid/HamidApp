@@ -1,0 +1,92 @@
+{
+  "title": "Skills & Expertise",
+  "subtitle": "A comprehensive toolkit built over {{years}} years of hands-on experience in mobile engineering, web development, and enterprise-scale digital banking solutions",
+  "categories": [
+    {
+      "title": "AI-Driven Development",
+      "skills": [
+        "AI Coding Agents (Claude Code, GitHub Copilot)",
+        "AI-Augmented SDLC",
+        "Prompt Engineering",
+        "Agentic Workflows",
+        "AI Pair Programming",
+        "Figma Make",
+        "AI Governance & Best Practices"
+      ]
+    },
+    {
+      "title": "Mobile Engineering",
+      "skills": [
+        "React Native",
+        "Android (Java/Kotlin)",
+        "iOS",
+        "Native SDK/Module Development",
+        "NPM Package Development",
+        "Mobile Architecture",
+        "Performance Optimization",
+        "Mobile Security Hardening",
+        "Deep Linking",
+        "OTA Updates",
+        "Push Notifications",
+        "Crashlytics/Sentry",
+        "Mobile Analytics",
+        "Device Integrations",
+        "REST/GraphQL APIs",
+        "Offline-first Development"
+      ]
+    },
+    {
+      "title": "Web Development",
+      "skills": [
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "React",
+        "Vite",
+        "React Hooks",
+        "Context API",
+        "NX Monorepo",
+        "Redux Toolkit",
+        "Material UI",
+        "Tailwind CSS",
+        "Webpack",
+        "Babel",
+        "Responsive UI Design",
+        "Component-driven Development"
+      ]
+    },
+    {
+      "title": "Backend & DevOps",
+      "skills": [
+        "Java (Spring Boot)",
+        "Node.js (Express/Nest.js)",
+        "Microservices",
+        "REST API Design",
+        "JWT/OAuth2",
+        "MySQL",
+        "MongoDB",
+        "Azure DevOps Pipelines",
+        "GitHub Actions",
+        "CI/CD Automation",
+        "Fastlane",
+        "GitFlow",
+        "Monitoring & Logging",
+        "Release Governance"
+      ]
+    },
+    {
+      "title": "Practices & Leadership",
+      "skills": [
+        "Agile (Scrum/Kanban)",
+        "Architecture Design",
+        "Clean Architecture",
+        "MVVM/MVI",
+        "QA Automation (Unit/Integration/E2E)",
+        "Code Quality Tools (ESLint/Prettier)",
+        "Documentation",
+        "Cross-functional Collaboration",
+        "Mentorship & Leadership",
+        "Performance Engineering"
+      ]
+    }
+  ]
+}

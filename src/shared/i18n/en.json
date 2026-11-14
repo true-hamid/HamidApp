@@ -1,0 +1,13 @@
+{
+  "languages": {
+    "en": "English",
+    "ar": "العربية"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "contact": "Contact"
+  }
+}

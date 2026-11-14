@@ -1,0 +1,26 @@
+{
+  "title": "About Me",
+  "subtitle": "Lead Engineer with {{years}} years of experience designing and delivering enterprise-scale digital banking solutions across the UAE, Egypt, and Pakistan. Specialized in mobile engineering, secure digital channels, and multi-region product delivery. Trusted technical leader with a strong record of improving app performance, driving security maturity, and accelerating engineering productivity. Champion of AI-driven development, embedding AI coding agents and AI-augmented practices across the software development lifecycle (SDLC) to accelerate delivery and elevate code quality.",
+  "journeyTitle": "My Journey",
+  "journeyParagraphs": [
+    "After graduating with a B.S. in Computer Engineering in 2017, I started my career as a software developer at TPRA in Sudan, where I delivered solutions aligned with IT and regulatory requirements. I joined Mashreq Bank in Dubai in 2019, where I've progressed from Dev Engineer to Global Lead Engineer.",
+    "I joined SemiCode as Head of Mobile Development, where I established and led the mobile engineering function in a fast-paced startup environment.",
+    "Throughout my journey at Mashreq, I've led the development of digital banking solutions serving over 1M+ users, enhanced mobile security posture by reducing vulnerabilities by 90%, and achieved significant improvements in app performance including a 3× faster launch time. I developed the first React Native Windows application in the region and built native plugins integrating with UAE ICP systems, contributing to a 55% increase in new client onboarding.",
+    "Currently pursuing my M.S. in Business Administration at AASTMT, Egypt, I continue to lead engineering efforts across multiple regions and have spearheaded the adoption of AI-driven development — integrating AI coding agents (Claude Code, GitHub Copilot) into daily engineering workflows and embedding AI across the full SDLC to define team standards and best practices for responsible AI-assisted engineering."
+  ],
+  "education": {
+    "title": "Education",
+    "degrees": [
+      {
+        "degree": "M.S. in Business Administration",
+        "institution": "AASTMT, Egypt",
+        "period": "Sept 2024 - Present"
+      },
+      {
+        "degree": "B.S. in Computer Engineering",
+        "institution": "The Future University, Sudan",
+        "period": "Mar 2017"
+      }
+    ]
+  }
+}

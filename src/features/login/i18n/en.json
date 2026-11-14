@@ -1,0 +1,11 @@
+{
+  "title": "Enter PIN",
+  "pinPlaceholder": "PIN",
+  "loginButton": "Log In",
+  "error": "Incorrect PIN. Please try again.",
+  "changeLanguage": "Change Language",
+  "languageModal": {
+    "title": "Select Language",
+    "cancel": "Cancel"
+  }
+}

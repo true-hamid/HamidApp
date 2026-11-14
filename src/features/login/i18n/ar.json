@@ -1,0 +1,11 @@
+{
+  "title": "أدخل الرقم السري",
+  "pinPlaceholder": "الرقم السري",
+  "loginButton": "تسجيل الدخول",
+  "error": "رقم سري غير صحيح، يرجى المحاولة مرة أخرى.",
+  "changeLanguage": "تغيير اللغة",
+  "languageModal": {
+    "title": "اختر اللغة",
+    "cancel": "إلغاء"
+  }
+}

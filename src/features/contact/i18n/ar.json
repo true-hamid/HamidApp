@@ -1,0 +1,24 @@
+{
+  "heading": "تواصل معي",
+  "subheading": "مهتم بالعمل معاً؟ دعنا نتواصل ونناقش مشروعك",
+  "infoHeading": "معلومات التواصل",
+  "followHeading": "لنتواصل",
+  "emailPrimary": "hamidelmamouncom@gmail.com",
+  "socialLinks": [
+    {
+      "label": "لينكد إن",
+      "href": "https://linkedin.com/in/hamid-abdalrahman"
+    },
+    {
+      "label": "جيت هاب",
+      "href": "https://github.com/true-hamid"
+    }
+  ],
+  "personal": {
+    "name": "حامد عبدالرحمن",
+    "title": "مهندس قائد للتطبيقات",
+    "location": "دبي، الإمارات العربية المتحدة"
+  },
+  "email": "البريد الإلكتروني",
+  "logOut": "تسجيل الخروج"
+}

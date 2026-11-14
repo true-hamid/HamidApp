@@ -1,0 +1,82 @@
+{
+  "title": "Experience",
+  "subtitle": "My professional journey in mobile engineering and digital banking solutions",
+  "positions": [
+    {
+      "title": "Global Lead Engineer",
+      "company": "Mashreq (Mobile Platform)",
+      "period": "Jul 2024 - Present",
+      "description": [
+        "Lead engineering efforts for the Mashreq Mobile App across multiple regions (UAE, Egypt, Pakistan), supporting a user base exceeding 1M+",
+        "Provide technical leadership, coaching, and mentorship to distributed engineering teams, resulting in 2× faster onboarding",
+        "Architect scalable and secure mobile features aligned with compliance and business growth requirements",
+        "Oversee end-to-end release management across Google Play, Apple App Store, and Huawei AppGallery",
+        "Partner with product, security, and architecture teams to ensure governance, compliance, and technical excellence",
+        "Spearheaded the adoption of AI-driven development across the mobile platform, integrating AI coding agents (Claude Code, GitHub Copilot) into daily engineering workflows to accelerate feature delivery and improve code quality",
+        "Embedded AI across the software development lifecycle (SDLC) — from design and code generation to automated testing, code review, and documentation — and defined team standards and best practices for responsible AI-assisted engineering"
+      ]
+    },
+    {
+      "title": "Senior Dev Engineer",
+      "company": "Mashreq (Mobile Platform)",
+      "period": "Jun 2022 - Aug 2024",
+      "description": [
+        "Designed mobile banking features improving scalability and supporting a 5% increase in downloads and a 4.8 average store rating for Mashreq UAE retail app, and 4.3 for Mashreq Egypt retail app",
+        "Enhanced mobile security posture through strong encryption, authentication layers, and proactive threat detection, reducing vulnerabilities by 90%",
+        "Coordinated monthly releases across app stores, ensuring compliance with store policies and internal governance",
+        "Collaborated with cybersecurity teams on audits and security hardening initiatives"
+      ]
+    },
+    {
+      "title": "Dev Engineer",
+      "company": "Mashreq Bank (Assisted Channels)",
+      "period": "Nov 2019 - Jun 2022",
+      "description": [
+        "Led a front-end squad delivering digital tools for client-facing staff, reducing manpower needs by 30%",
+        "Developed the first React Native Windows application in the region",
+        "Improved app performance by optimizing architecture and resolving bottlenecks, achieving a 3× faster launch time",
+        "Created and maintained automated test suites with 80%+ coverage",
+        "Built native plugins integrating with UAE ICP systems for Emirates ID and biometric readers, contributing to a 55% increase in new client onboarding"
+      ]
+    },
+    {
+      "title": "Head of Mobile Development",
+      "company": "Semicode",
+      "period": "Aug 2018 - Aug 2019",
+      "description": [
+        "Established and led the mobile engineering function in a startup environment",
+        "Delivered three commercial mobile products, including an online school platform and two eCommerce apps",
+        "Defined development standards and release processes for scalable delivery"
+      ]
+    },
+    {
+      "title": "Software Developer",
+      "company": "TPRA - Sudan",
+      "period": "Aug 2017 - Dec 2018",
+      "description": [
+        "Delivered software solutions aligned with IT and regulatory requirements",
+        "Contributed to the development of the telecommunications authority's main website and mobile application"
+      ]
+    }
+  ],
+  "awards": {
+    "title": "Awards and Recognition",
+    "items": [
+      {
+        "title": "Al Safwa – The Elite Club",
+        "organization": "Mashreq",
+        "year": "2022"
+      },
+      {
+        "title": "Certificate of Recognition of Outstanding Performance",
+        "organization": "Mashreq",
+        "year": "2020"
+      },
+      {
+        "title": "Featured Contribution – Microsoft Tech Community",
+        "organization": "Microsoft",
+        "link": "https://techcommunity.microsoft.com/"
+      }
+    ]
+  }
+}

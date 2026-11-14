@@ -1,0 +1,13 @@
+{
+  "languages": {
+    "en": "English",
+    "ar": "العربية"
+  },
+  "nav": {
+    "home": "الرئيسية",
+    "about": "عني",
+    "skills": "المهارات",
+    "experience": "الخبرة",
+    "contact": "التواصل"
+  }
+}

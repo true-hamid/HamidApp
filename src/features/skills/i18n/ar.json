@@ -1,0 +1,92 @@
+{
+  "title": "المهارات والخبرات",
+  "subtitle": "مجموعة أدوات شاملة مبنية على {{years}} سنة من الخبرة العملية في هندسة التطبيقات، تطوير الويب، والحلول المصرفية الرقمية على مستوى المؤسسات",
+  "categories": [
+    {
+      "title": "التطوير المدفوع بالذكاء الصناعي",
+      "skills": [
+        "AI Coding Agents (Claude Code, GitHub Copilot)",
+        "AI-Augmented SDLC",
+        "Prompt Engineering",
+        "Agentic Workflows",
+        "AI Pair Programming",
+        "Figma Make",
+        "AI Governance & Best Practices"
+      ]
+    },
+    {
+      "title": "هندسة التطبيقات",
+      "skills": [
+        "React Native",
+        "Android (Java/Kotlin)",
+        "iOS",
+        "تطوير SDK/وحدات أصلية",
+        "تطوير حزم NPM",
+        "بنية التطبيقات",
+        "تحسين الأداء",
+        "تعزيز أمان التطبيقات",
+        "الروابط العميقة",
+        "تحديثات OTA",
+        "الإشعارات الفورية",
+        "Crashlytics/Sentry",
+        "تحليلات التطبيقات",
+        "تكامل الأجهزة",
+        "REST/GraphQL APIs",
+        "التطوير بأولوية العمل دون اتصال"
+      ]
+    },
+    {
+      "title": "تطوير الويب",
+      "skills": [
+        "JavaScript (ES6+)",
+        "TypeScript",
+        "React",
+        "Vite",
+        "React Hooks",
+        "Context API",
+        "NX Monorepo",
+        "Redux Toolkit",
+        "Material UI",
+        "Tailwind CSS",
+        "Webpack",
+        "Babel",
+        "تصميم واجهات مستجيبة",
+        "التطوير القائم على المكونات"
+      ]
+    },
+    {
+      "title": "الخلفية والعمليات",
+      "skills": [
+        "Java (Spring Boot)",
+        "Node.js (Express/Nest.js)",
+        "الخدمات الصغيرة",
+        "تصميم REST API",
+        "JWT/OAuth2",
+        "MySQL",
+        "MongoDB",
+        "Azure DevOps Pipelines",
+        "GitHub Actions",
+        "أتمتة CI/CD",
+        "Fastlane",
+        "GitFlow",
+        "المراقبة والتسجيل",
+        "حوكمة الإصدارات"
+      ]
+    },
+    {
+      "title": "الممارسات والقيادة",
+      "skills": [
+        "Agile (Scrum/Kanban)",
+        "تصميم البنية المعمارية",
+        "البنية النظيفة",
+        "MVVM/MVI",
+        "أتمتة ضمان الجودة (الوحدة/التكامل/الشاملة)",
+        "أدوات جودة الكود (ESLint/Prettier)",
+        "التوثيق",
+        "التعاون متعدد الوظائف",
+        "الإرشاد والقيادة",
+        "هندسة الأداء"
+      ]
+    }
+  ]
+}
