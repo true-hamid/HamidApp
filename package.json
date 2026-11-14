@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "analyze:android": "react-native bundle --platform android --dev false --minify true --entry-file index.js --bundle-output /tmp/bundle-analysis/index.android.bundle --sourcemap-output /tmp/bundle-analysis/index.android.bundle.map --assets-dest /tmp/bundle-analysis/assets --reset-cache && source-map-explorer /tmp/bundle-analysis/index.android.bundle /tmp/bundle-analysis/index.android.bundle.map --no-border-checks --html /tmp/bundle-analysis/report.html --replace '/Users/hamid/workspace/HamidApp/' --with '' && open /tmp/bundle-analysis/report.html",
+    "analyze:ios": "mkdir -p /tmp/bundle-analysis-ios && react-native bundle --platform ios --dev false --minify true --entry-file index.js --bundle-output /tmp/bundle-analysis-ios/main.jsbundle --sourcemap-output /tmp/bundle-analysis-ios/main.jsbundle.map --assets-dest /tmp/bundle-analysis-ios/assets --reset-cache && source-map-explorer /tmp/bundle-analysis-ios/main.jsbundle /tmp/bundle-analysis-ios/main.jsbundle.map --no-border-checks --html /tmp/bundle-analysis-ios/report.html --replace '/Users/hamid/workspace/HamidApp/' --with '' && open /tmp/bundle-analysis-ios/report.html"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.6.1",
@@ -19,7 +21,7 @@
     "react-native": "0.78.3",
     "react-native-restart": "^0.0.29",
     "react-native-safe-area-context": "^5.11.1",
-    "react-native-screens": "4.15.0",
+    "react-native-screens": "4.14.1",
     "react-native-vector-icons": "^10.3.0"
   },
   "devDependencies": {
@@ -42,6 +44,7 @@
     "jest": "^29.6.3",
     "prettier": "2.8.8",
     "react-test-renderer": "19.0.0",
+    "source-map-explorer": "^2.5.3",
     "typescript": "5.0.4"
   },
   "engines": {
