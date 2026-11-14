@@ -13,10 +13,11 @@ const registry = new Map<string, FeatureModule>();
 const registeredNamespaces = new Set<string>();
 
 /**
- * Wraps every screen loader so the feature's translations are registered as a
- * namespace right before the first of its screens is required.
+ * Wraps every screen loader so the feature's lazy resources (currently its
+ * translations, registered as a namespace) are set up right before the first
+ * of its screens is required.
  */
-function withLazyI18n(id: string, feature: FeatureModule): FeatureModule {
+function withLazyLoad(id: string, feature: FeatureModule): FeatureModule {
   const {i18n} = feature;
   if (!i18n) {
     return feature;
@@ -47,7 +48,7 @@ function withLazyI18n(id: string, feature: FeatureModule): FeatureModule {
  */
 export function loadFeatures(loaders: FeatureLoader[]): void {
   loaders.forEach(({id, load}) => {
-    registry.set(id, withLazyI18n(id, load()));
+    registry.set(id, withLazyLoad(id, load()));
   });
 }
 

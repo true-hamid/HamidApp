@@ -204,7 +204,7 @@ useMemo(() => loadFeatures(featureLoaders), [featureLoaders]);
 // src/registry/registry.ts
 export function loadFeatures(loaders: FeatureLoader[]): void {
   loaders.forEach(({id, load}) => {
-    registry.set(id, withLazyI18n(id, load()));
+    registry.set(id, withLazyLoad(id, load()));
   });
 }
 ```
@@ -257,7 +257,7 @@ export default {en, ar};          // I18nBundles = Record<lang, object>
 ```
 
 The registry does not load these when the manifest is loaded. Instead,
-`withLazyI18n` **wraps every screen's `getComponent`** so that the namespace is
+`withLazyLoad` **wraps every screen's `getComponent`** so that the namespace is
 registered just before the first screen of that feature is required:
 
 ```ts
@@ -405,7 +405,7 @@ const pushedScreens = getStackScreens('postLogin.stack');
   <Stack.Screen
     key={screen.name}
     name={screen.name}
-    getComponent={screen.getComponent}          // wrapped by withLazyI18n
+    getComponent={screen.getComponent}          // wrapped by withLazyLoad
     options={{title: screen.titleKey ? t(screen.titleKey) : screen.name}}
   />
 ))}
