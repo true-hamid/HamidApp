@@ -2,7 +2,7 @@ import React from 'react';
 import {Linking, SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {useTranslation} from 'react-i18next';
 
-import {useAuth} from '../../navigation/AuthContext';
+import {useAuth} from '@navigation/AuthContext';
 
 type SocialLink = {label: string; href: string};
 console.log('ContactScreen evaluated');

@@ -11,8 +11,8 @@ import {
 } from 'react-native';
 import {useTranslation} from 'react-i18next';
 
-import {useAuth} from '../../navigation/AuthContext';
-import {SUPPORTED_LANGUAGES, changeLanguage} from '../../i18n';
+import {useAuth} from '@navigation/AuthContext';
+import {SUPPORTED_LANGUAGES, changeLanguage} from '@i18n';
 
 // TODO: replace with real authentication once a backend/auth provider is wired up.
 const STATIC_PIN = '1234';

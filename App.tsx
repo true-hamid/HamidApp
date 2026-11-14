@@ -4,11 +4,12 @@
 
 import React from 'react';
 
-import './src/i18n';
-import RootNavigator from './src/navigation/RootNavigator';
+import '@i18n';
+import {featureLoaders} from '@registry/featureLoaders';
+import RootNavigator from '@navigation/RootNavigator';
 
 function App(): React.JSX.Element {
-  return <RootNavigator />;
+  return <RootNavigator featureLoaders={featureLoaders} />;
 }
 
 export default App;

@@ -1,0 +1,4 @@
+{
+  "include": ["./src/features/home/feature"],
+  "exclude": []
+}

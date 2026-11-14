@@ -1,28 +1,17 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import type {BottomTabNavigationProp} from '@react-navigation/bottom-tabs';
+import type {NavigationProp, ParamListBase} from '@react-navigation/native';
 import {useTranslation} from 'react-i18next';
 
-import type {PostLoginTabParamList} from '../../navigation/types';
-import {yearsOfExperience} from '../../shared/utils/calculateExperience';
-
-type Stat = {value: string; label: string};
-type Reach = {figure: string; caption: string};
+import {yearsOfExperience} from '@shared/utils/calculateExperience';
 
 console.log('HomeScreen evaluated');
 
 function HomeScreen(): React.JSX.Element {
-  const navigation = useNavigation<BottomTabNavigationProp<PostLoginTabParamList>>();
+  const navigation = useNavigation<NavigationProp<ParamListBase>>();
   const {t, i18n} = useTranslation('home');
   const isRTL = i18n.language === 'ar';
-
-  const reach = t('showcase.reach', {returnObjects: true}) as Reach;
-  const stats = t('showcase.stats', {returnObjects: true}) as Stat[];
-  const impactStats: Stat[] = [
-    {value: reach.figure, label: reach.caption},
-    ...stats,
-  ];
 
   return (
     <SafeAreaView style={styles.container}>
@@ -46,16 +35,13 @@ function HomeScreen(): React.JSX.Element {
           <Text style={styles.buttonText}>{t('hero.ctaPrimary')}</Text>
         </TouchableOpacity>
 
-        <View style={styles.statsGrid}>
-          {impactStats.map(stat => (
-            <View style={styles.statCard} key={stat.label}>
-              <Text style={styles.statValue}>{stat.value}</Text>
-              <Text style={[styles.statLabel, isRTL && styles.textRTL]}>
-                {stat.label}
-              </Text>
-            </View>
-          ))}
-        </View>
+        <TouchableOpacity
+          style={styles.secondaryButton}
+          onPress={() => navigation.navigate('Showcase')}>
+          <Text style={styles.secondaryButtonText}>
+            {t('hero.ctaSecondary')}
+          </Text>
+        </TouchableOpacity>
       </ScrollView>
     </SafeAreaView>
   );
@@ -102,33 +88,24 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     paddingVertical: 14,
     alignItems: 'center',
-    marginBottom: 32,
+    marginBottom: 12,
   },
   buttonText: {
     color: '#fff',
     fontSize: 16,
     fontWeight: '600',
   },
-  statsGrid: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    gap: 12,
+  secondaryButton: {
+    borderWidth: 1,
+    borderColor: '#007aff',
+    borderRadius: 8,
+    paddingVertical: 14,
+    alignItems: 'center',
   },
-  statCard: {
-    flexBasis: '47%',
-    backgroundColor: '#f5f6f8',
-    borderRadius: 12,
-    padding: 16,
-  },
-  statValue: {
-    fontSize: 22,
-    fontWeight: '700',
+  secondaryButtonText: {
     color: '#007aff',
-    marginBottom: 4,
-  },
-  statLabel: {
-    fontSize: 13,
-    color: '#555',
+    fontSize: 16,
+    fontWeight: '600',
   },
 });
 

@@ -2,7 +2,7 @@ import React from 'react';
 import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {useTranslation} from 'react-i18next';
 
-import {yearsOfExperience} from '../../shared/utils/calculateExperience';
+import {yearsOfExperience} from '@shared/utils/calculateExperience';
 
 type Degree = {degree: string; institution: string; period: string};
 console.log('AboutScreen evaluated');

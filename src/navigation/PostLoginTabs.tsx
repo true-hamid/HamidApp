@@ -1,60 +1,82 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import type {ParamListBase} from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import {useTranslation} from 'react-i18next';
 
-import HomeScreen from '../features/home/HomeScreen';
-import AboutScreen from '../features/about/AboutScreen';
-import SkillsScreen from '../features/skills/SkillsScreen';
-import ExperienceScreen from '../features/experience/ExperienceScreen';
-import ContactScreen from '../features/contact/ContactScreen';
-import type {PostLoginTabParamList} from './types';
+import {getTabScreens} from '@registry/registry';
 
-const Tab = createBottomTabNavigator<PostLoginTabParamList>();
+const Tab = createBottomTabNavigator<ParamListBase>();
 
-const TAB_ICONS: Record<keyof PostLoginTabParamList, string> = {
-  Home: 'home',
+// Tabs not yet migrated to a manifest; their icon and label live here.
+type LegacyTab = 'About' | 'Skills' | 'Experience' | 'Contact';
+
+const TAB_ICONS: Record<LegacyTab, string> = {
   About: 'person',
   Skills: 'construct',
   Experience: 'briefcase',
   Contact: 'mail',
 };
 
-const TAB_LABEL_KEYS: Record<keyof PostLoginTabParamList, string> = {
-  Home: 'nav.home',
+const TAB_LABEL_KEYS: Record<LegacyTab, string> = {
   About: 'nav.about',
   Skills: 'nav.skills',
   Experience: 'nav.experience',
   Contact: 'nav.contact',
 };
 
+// Defined outside the component so the render function isn't created in render.
+const tabIcon =
+  (iconName: string) =>
+  ({color, size, focused}: {color: string; size: number; focused: boolean}) => (
+    <Icon
+      name={focused ? iconName : `${iconName}-outline`}
+      color={color}
+      size={size}
+    />
+  );
+
 function PostLoginTabs(): React.JSX.Element {
   const {t} = useTranslation();
+  // Tabs contributed by features for this navigator, sorted by `tab.index`.
+  const featureTabs = getTabScreens('mainDashboard.tabs');
 
   return (
     <Tab.Navigator
       screenOptions={({route}) => {
-        const routeName = route.name as keyof PostLoginTabParamList;
+        const routeName = route.name as LegacyTab;
+        const featureTab = featureTabs.find(s => s.name === route.name)?.tab;
         return {
           headerTitleAlign: 'center',
-          title: t(TAB_LABEL_KEYS[routeName]),
-          tabBarIcon: ({color, size, focused}) => {
-            const iconName = TAB_ICONS[routeName];
-            return (
-              <Icon
-                name={focused ? iconName : `${iconName}-outline`}
-                color={color}
-                size={size}
-              />
-            );
-          },
+          title: t(featureTab?.labelKey ?? TAB_LABEL_KEYS[routeName]),
+          tabBarIcon: tabIcon(featureTab?.icon ?? TAB_ICONS[routeName]),
         };
       }}>
-      <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="About" component={AboutScreen} />
-      <Tab.Screen name="Skills" component={SkillsScreen} />
-      <Tab.Screen name="Experience" component={ExperienceScreen} />
-      <Tab.Screen name="Contact" component={ContactScreen} />
+      {/* Migrated features (from features.json via the registry). */}
+      {featureTabs.map(screen => (
+        <Tab.Screen
+          key={screen.name}
+          name={screen.name}
+          getComponent={screen.getComponent}
+        />
+      ))}
+      {/* Not yet migrated: still hardcoded. */}
+      <Tab.Screen
+        name="About"
+        getComponent={() => require('../features/about/AboutScreen').default}
+      />
+      <Tab.Screen
+        name="Skills"
+        getComponent={() => require('../features/skills/SkillsScreen').default}
+      />
+      <Tab.Screen
+        name="Experience"
+        getComponent={() => require('../features/experience/ExperienceScreen').default}
+      />
+      <Tab.Screen
+        name="Contact"
+        getComponent={() => require('../features/contact/ContactScreen').default}
+      />
     </Tab.Navigator>
   );
 }

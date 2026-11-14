@@ -3,9 +3,8 @@ import RNRestart from 'react-native-restart';
 import i18n from 'i18next';
 import {initReactI18next} from 'react-i18next';
 
-import common from '../shared/i18n';
+import common from '@shared/i18n';
 import login from '../features/login/i18n';
-import home from '../features/home/i18n';
 import about from '../features/about/i18n';
 import skills from '../features/skills/i18n';
 import experience from '../features/experience/i18n';
@@ -16,7 +15,7 @@ export const SUPPORTED_LANGUAGES = [
   {code: 'ar', labelKey: 'languages.ar'},
 ] as const;
 
-const features = {common, login, home, about, skills, experience, contact};
+const features = {common, login, about, skills, experience, contact};
 const languages = ['en', 'ar'] as const;
 
 const resources = Object.fromEntries(
